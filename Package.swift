@@ -28,10 +28,7 @@ import PackageDescription
 let package = Package(
     name: "AlamofireImage",
     platforms: [
-        .iOS(.v9),
-        .macOS(.v10_10),
-        .tvOS(.v9),
-        .watchOS(.v2)
+        .iOS(.v11)
     ],
     products: [
         .library(name: "AlamofireImage", type: .dynamic,targets: ["AlamofireImage"])
@@ -46,5 +43,5 @@ let package = Package(
             path: "Source"
         )
     ],
-    swiftLanguageVersions: [.v4, .v4_2, .v5]
+    swiftLanguageVersions: [.v5]
 )
