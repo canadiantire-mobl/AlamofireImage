@@ -31,7 +31,7 @@ let package = Package(
         .iOS(.v11)
     ],
     products: [
-        .library(name: "AlamofireImage", targets: ["AlamofireImage"])
+        .library(name: "AlamofireImage", type: .dynamic, targets: ["AlamofireImage"])
     ],
     dependencies: [
         .package(url: "https://github.com/Alamofire/Alamofire.git", from: "4.9.1")
